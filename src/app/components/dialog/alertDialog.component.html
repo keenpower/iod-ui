@@ -1,0 +1,15 @@
+<div class="kpui-dialog">
+	<div class="title" td-toolbar-content layout="row" layout-align="start center" flex>
+		<span class="cursor-pointer title-text">{{ config['title'] || '提示' }}</span>
+		<span flex></span>
+		<span md-icon-button (click)="mdDialogRef.close(false)" class="cursor-pointer md-dialog-title-close">
+			<md-icon>close</md-icon>
+		</span>
+	</div>
+
+	<div md-dialog-content class="confirm-dialog-content"><md-icon *ngIf="config && config.type == 'info'" style="color:#FE4442">info_outline</md-icon>&nbsp;&nbsp;{{ config['content'] }}</div>
+
+	<div class="confirm-dialog-operate" layout="row">
+		<button md-raised-button class="submit" (click)="ok()">{{ config.submitText || '知道了' }}</button>
+	</div>
+</div>

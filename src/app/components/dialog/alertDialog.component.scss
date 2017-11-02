@@ -1,0 +1,65 @@
+// :host {
+//     display: block;
+// }
+
+.kpui-dialog {
+    margin: -24px;
+    overflow: hidden;
+    // 标题
+    .md-dialog-title-close {
+        .mat-icon {
+            display: block;
+        }
+        color: #333333;
+    }
+    // 操作按钮
+    .confirm-dialog-operate {
+        margin-bottom: 0;
+        margin-top: -5px;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        .cancel,
+        .submit {
+            // width: 60px;
+            // height: 30px;
+            min-width: 30px;
+            line-height: 28px;
+            margin: 0 25px;
+            padding: 0 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333333;
+            border: none;
+            background-color: #eeeeee;
+        }
+        .submit {
+            color: #ffffff;
+            background-color: #b92f30;
+        }
+    }
+
+    .title {
+        height: 38px;
+        line-height: 38px;
+        padding: 0 20px;
+        font-size: 18px;
+        color: #b92f30;
+        border-bottom: 1px solid #e7e7e7;
+
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .confirm-dialog-content {
+        padding-top:50px;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333333;
+        font-size: 14px;
+    }
+}

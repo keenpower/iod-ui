@@ -1,0 +1,244 @@
+/* single attribute >> atom css
+-------------------------------------------------- */
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.hidden {
+  overflow: hidden;
+}
+.pointer {
+  cursor: pointer;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+}
+
+/* clear float
+-------------------------------------------------- */
+
+.clear {
+  font-size: 0;
+
+  clear: both;
+  overflow: hidden;
+
+  height: 0;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+
+  height: 0;
+
+  content: "\0020";
+}
+.clearfix {
+  zoom: 1;
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+// Custom style for loading elements without height
+.will-load {
+  min-height: 80px;
+}
+// Href line height wasn't right for md-icon-button
+a[md-icon-button] {
+  line-height: 36px;
+}
+
+// Capitalize
+.text-capital {
+  text-transform: capitalize;
+}
+
+// Lighter font weight in sub-toolbars
+td-layout-manage-list .mat-toolbar {
+  font-weight: 400;
+}
+
+.kp-mat-dialog-container {
+  padding: 0 !important;
+  border-radius: 5px !important;
+  border: 1px solid #d9d9d9 !important;
+}
+
+// reset table css
+.kpui-table {
+  overflow: auto;
+  border: 1px solid #eeeeee;
+  thead {
+    tr {
+      height: 40px;
+      line-height: 40px;
+    }
+    th {
+      padding-left: 0;
+      padding-right: 0;
+      color: #333333;
+      font-weight: normal;
+      border: 1px solid #e7e7e7;
+      border-left: 0;
+      border-top: 0;
+      background-color: #eeeeee;
+
+      .md-caption {
+        font-size: 14px;
+        color: #333333;
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+  tbody {
+    tr {
+      height: 40px;
+      line-height: 40px;
+      border: none;
+    }
+    td {
+      padding-left: 10px;
+      padding-right: 10px;
+      border: 1px solid #f7f7f7;
+      border-left: none;
+      &:last-child {
+        padding-right: 10px;
+        border-right: none;
+      }
+      &:first-child {
+        padding: 0;
+      }
+    }
+  }
+}
+.kpui-td-table {
+  table {
+    overflow-y: auto;
+    border: 1px solid #eeeeee;
+    thead {
+      tr {
+        height: 40px;
+        line-height: 40px;
+      }
+      th {
+        padding-left: 0;
+        padding-right: 0;
+        color: #333333;
+        font-weight: normal;
+        text-align: center;
+        border: 1px solid #e7e7e7;
+        border-left: 0;
+        border-top: 0;
+        background-color: #eeeeee;
+        .md-caption {
+          font-size: 14px;
+          color: #333333;
+        }
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding: 0;
+        }
+      }
+    }
+    tbody {
+      tr {
+        height: 40px;
+        line-height: 40px;
+        border: none;
+      }
+      td {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        border: 1px solid #f7f7f7;
+        border-left: none;
+        &:last-child {
+          padding-right: 10px;
+          border-right: none;
+        }
+        &:first-child {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.kpui-search-input {
+  border-radius: 5px;
+  .mat-input-wrapper {
+    margin: 0;
+    margin-left: 30px;
+    padding: 5px 5px;
+    line-height: 16px;
+    font-size: 12px;
+    border: 1px solid #e7e7e7;
+
+    .mat-input-infix {
+      .mat-input-element {
+        font-size: 14px;
+      }
+      .mat-input-placeholder-wrapper {
+        font-size: 14px;
+      }
+    }
+  }
+  .mat-icon-button {
+    height: 28px;
+    line-height: 28px;
+  }
+}
+
+.kpui-select {
+  .mat-select-trigger {
+    box-sizing: border-box;
+    padding: 8px 10px;
+    width: 160px;
+    height: 30px;
+    border: 1px solid #eee;
+    font-size: 14px;
+  }
+  .mat-select-value {
+    font-size: 14px;
+    line-height: 1;
+    padding-left: 10px;
+  }
+  .mat-select-underline {
+    display: none;
+  }
+}
+
+
+//
+.mat-focused .mat-input-wrapper .mat-input-placeholder{
+  color: rgba(0, 0, 0, 0.38);
+}

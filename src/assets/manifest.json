@@ -1,0 +1,10 @@
+{
+    "name": "睿力科技-前端UI",
+    "short_name": "iod-ui",
+    "start_url": "/",
+    "icons": [
+    ],
+    "theme_color": "#1976d2",
+    "background_color": "#1976d2",
+    "display": "standalone"
+}
