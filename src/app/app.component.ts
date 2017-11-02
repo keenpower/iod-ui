@@ -26,7 +26,7 @@ export class AppComponent {
         title:"提示"
     };
 
-    this._confirmDialogService.confirm(dialogConfig)
+    this._confirmDialogService.confirm("确认删除吗？")
             .subscribe(res => 
             {
                 // 返回结果

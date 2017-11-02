@@ -1,7 +1,7 @@
 {
   "name": "iod-ui",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.2",
+  "private": false,
   "description": "睿力科技-前端UI",
   "keywords": [
     "睿力",
@@ -9,25 +9,15 @@
     "reusable"
   ],
   "scripts": {
-    "start": "ng serve",
-    "e2e": "ng e2e",
-    "lint": "ng lint",
-    "reinstall": "rm -rf node_modules tmp deploy dist && npm i",
-    "postinstall": "webdriver-manager update && ./scripts/protractor.sh",
-    "start-api": "cd mock-api && covalent-data &",
-    "stop-api": "pkill covalent-data",
-    "webdriver-update": "bash ./node_modules/.bin/webdriver-manager update",
-    "test": "ng test --code-coverage --single-run",
-    "test:watch": "ng test --code-coverage",
-    "ghpages-deploy": "ng build --base-href /iod-ui/ --aot -prod --sourcemap=false && bash scripts/ghpages-deploy"
+    "start": "ng serve"
   },
   "engines": {
-    "node": ">4.4 < 7",
+    "node": ">4.4",
     "npm": ">3"
   },
   "repository": "https://github.com/songliuchen/iod-ui.git",
   "license": "MIT",
-  "author": "songliuchen",
+  "author": "宋刘陈",
   "contributors": [
     "杨小亮",
     "王野"
@@ -50,7 +40,6 @@
     "@covalent/highlight": "1.0.0-beta.5",
     "@covalent/http": "1.0.0-beta.5",
     "@covalent/markdown": "1.0.0-beta.5",
-    "@types/lodash": "4.14.74",
     "core-js": "2.4.1",
     "hammerjs": "2.0.8",
     "node-sass": "4.5.3",

@@ -3,7 +3,7 @@
 		<span class="cursor-pointer title-text">{{ config['title'] || '提示' }}</span>
 		<span flex></span>
 		<span md-icon-button (click)="mdDialogRef.close(false)" class="cursor-pointer md-dialog-title-close">
-			<md-icon>close</md-icon>
+			<md-icon *ngIf="config.showClose">close</md-icon>
 		</span>
 	</div>
 
