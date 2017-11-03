@@ -3,14 +3,14 @@
 		<span class="cursor-pointer title-text">{{ config['title'] || '提示' }}</span>
 		<span flex></span>
 		<span md-icon-button (click)="mdDialogRef.close(false)" class="cursor-pointer md-dialog-title-close">
-			<md-icon *ngIf="config.showClose">close</md-icon>
+			<md-icon *ngIf="config['showClose']">close</md-icon>
 		</span>
 	</div>
 
-	<div md-dialog-content class="confirm-dialog-content"><md-icon *ngIf="config.type == 'info'" style="color:#FE4442">info_outline</md-icon><md-icon *ngIf="config.type== 'warn' || config.type== 'question' " style="color:#FFCA2B">warning</md-icon>&nbsp;&nbsp;{{ config['content'] }}</div>
+	<div md-dialog-content class="confirm-dialog-content"><md-icon *ngIf="config['type'] == 'info'" style="color:#FE4442">info_outline</md-icon><md-icon *ngIf="config['type']== 'warn' || config['type']== 'question' " style="color:#FFCA2B">warning</md-icon>&nbsp;&nbsp;{{ config['content'] }}</div>
 
 	<div class="confirm-dialog-operate" layout="row">
-		<button md-raised-button class="cancel" (click)="cancel()">{{ config.cancelText || '取消' }}</button>
-		<button md-raised-button class="submit" (click)="ok()">{{ config.submitText || '确定' }}</button>
+		<button md-raised-button class="cancel" (click)="cancel()">{{ config['cancelText'] || '取消' }}</button>
+		<button md-raised-button class="submit" (click)="ok()">{{ config['submitText'] || '确定' }}</button>
 	</div>
 </div>

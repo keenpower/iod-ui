@@ -7,9 +7,9 @@
 		</span>
 	</div>
 
-	<div md-dialog-content class="confirm-dialog-content"><md-icon *ngIf="config && config.type == 'info'" style="color:#FE4442">info_outline</md-icon>&nbsp;&nbsp;{{ config['content'] }}</div>
+	<div md-dialog-content class="confirm-dialog-content"><md-icon *ngIf="config && config['type'] == 'info'" style="color:#FE4442">info_outline</md-icon>&nbsp;&nbsp;{{ config['content'] }}</div>
 
 	<div class="confirm-dialog-operate" layout="row">
-		<button md-raised-button class="submit" (click)="ok()">{{ config.submitText || '知道了' }}</button>
+		<button md-raised-button class="submit" (click)="ok()">{{ config['submitText'] || '知道了' }}</button>
 	</div>
 </div>
